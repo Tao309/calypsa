@@ -1,0 +1,4 @@
+js:
+scrollEventInterval:10
+=>
+scrollEventInterval:2

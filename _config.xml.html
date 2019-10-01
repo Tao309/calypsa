@@ -1,0 +1,41 @@
+Очищай:
+platforms\android\bin\res\crunch\
+
+<access origin="tel:*" launch-external="yes" />
+<access origin="mailto:*" launch-external="yes" />
+<access origin="sms:*" launch-external="yes" />
+<access origin="http://*" launch-external="yes" />
+<access origin="https://*" launch-external="yes" />
+
+<icon src="res/drawable-xhdpi/icon.png" />
+<icon density="ldpi" src="res/drawable-ldpi/icon" />
+<icon density="mdpi" src="res/drawable-mdpi/icon" />
+<icon density="hdpi" src="res/drawable-hdpi/icon" />
+<icon density="xhdpi" src="res/drawable-xhdpi/icon" />
+<icon density="xxhdpi" src="res/drawable-xxhdpi/icon" />
+<icon density="xxxhdpi" src="res/drawable-xxxhdpi/icon" />
+<splash density="land-ldpi" src="res/drawable-land-ldpi/screen" />
+<splash density="land-mdpi" src="res/drawable-land-mdpi/screen" />
+<splash density="land-hdpi" src="res/drawable-land-hdpi/screen" />
+<splash density="land-xhdpi" src="res/drawable-land-xhdpi/screen" />
+<splash density="land-xxhdpi" src="res/drawable-land-xxhdpi/screen" />
+<splash density="land-xxxhdpi" src="res/drawable-land-xxxhdpi/screen" />
+<splash density="port-ldpi" src="res/drawable-port-ldpi/screen" />
+<splash density="port-mdpi" src="res/drawable-port-mdpi/screen" />
+<splash density="port-hdpi" src="res/drawable-port-hdpi/screen" />
+<splash density="port-xhdpi" src="res/drawable-port-xhdpi/screen" />
+<splash density="port-xxhdpi" src="res/drawable-port-xxhdpi/screen" />
+<splash density="port-xxxhdpi" src="res/drawable-port-xxxhdpi/screen" />
+
+<preference name="LoadUrlTimeoutValue" value="50000" />
+
+<preference name="AutoHideSplashScreen" value="false"/>
+<preference name="SplashScreen" value="screen"/>
+<preference name="SplashScreenDelay" value="10000"/>
+<preference name="ShowSplashScreenSpinner" value="false"/>
+<!-- Снизу две могут вызывать ошибку, ставь FadeSplashScreen='false'-->
+<preference name="FadeSplashScreen" value="true"/>
+<preference name="FadeSplashScreenDuration" value="1.0"/>
+
+after add this line in config.xml solve problem in ios 
+<preference name="DisallowOverscroll" value="false" />

@@ -1,0 +1,17 @@
+Сначала всё уменьшаем и затем кодируем!
+
+JS minifier!!:
+http://www.jscompressor.com/
+NO SHRINK VARIABLES with obfuscate
+
+JS Obfuscator:
+http://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx
+Encode Strings
+Move Strings
+
+CSS minifier:
+http://www.jscompressor.com/
+https://cssminifier.com/
+
+HTML
+http://www.textfixer.com/html/compress-html-compression.php
