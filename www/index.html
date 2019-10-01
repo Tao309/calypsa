@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calypsa Club</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+
+	<link href="lib/ionic/css/ionic.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css?v=1" rel="stylesheet" type="text/css">
+</head>
+<base href='#/'/>
+<body ng-app="app" ng-controller="body">
+<ion-side-menus enable-menu-with-back-views="true">
+	<ion-side-menu-content>
+			<ion-header-bar class="bar-positive" align-title="center">
+				<button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+				<div class="button-bar">
+					<a href="#/" class="tfl-nm index button button-icon"></a>
+					<a href="#/promo/shares/" class="tfl-nm list button button-icon"></a>
+					<a href="#/promo/cat/1/" class="tfl-nm catalog button button-icon"></a>
+				</div>
+				<button ng-click="showPopup('topMenu',$event)" class="button button-icon icon ion-android-more-vertical"></button>
+			</ion-header-bar>
+
+			<ion-nav-view id="body"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left" width="220" expose-aside-when="large">
+			<ion-content overflow-scroll='false'>
+			<ion-list left-menu class="list" id="leftMenu"></ion-list>
+			</ion-content>
+	</ion-side-menu>
+	
+</ion-side-menus>
+<script src="cordova.js"></script>
+<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+<script src="js/app.js?v1"></script>
+</body>
+</html>
